@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Video Player</title>
+</head>
+<body>
+    <div class="players">
+        <video class="video" src="video/big_buck_bunny_720p_surround.mp4"></video>
+        <div class="player-controls">
+            <div class="progress">
+                <div class="progress1"></div>
+            </div>
+            <button class="player-button" title="Toggle Play">►</button>
+            <input type="range" name="volume" class="slider" min="0" max="1" step="0.05" value="1">
+            <input type="range" name="playback" class="slider" min="0.5" max="2" step="0.1" value="1">
+            <button data-skip="-10" class="player-button"><< 10s</button>
+            <button data-skip="25" class="player-button">>> 25s</button>
+            <button class="player-button btn">open</button>
+            <button class="player-button close">close</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
